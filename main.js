@@ -18,6 +18,13 @@ class Player {
   }
 }
 
+class Hand {
+  constructor(card, visible) {
+    this.card = card;
+    this.visible = visible;
+  }
+}
+
 let cards = [];
 for (let card in deck) {
   let auxCard = new Card(deck[card].suit, deck[card].value);
@@ -49,8 +56,10 @@ console.log(shuffle(cards));
 let handGenerator = (wholeDeck, players, round) => {
   for (let i = 0; i <= round; i++) {
     for (let player in players) {
-      players[player].hand.push(wholeDeck[i]);
+      let auxHand = new Hand(wholeDeck[i], 'false')
+      players[player].hand.push(auxHand);
       wholeDeck.splice(i, 1);
+      console.log(players[player].hand)
     }
   }
 };
