@@ -4,7 +4,7 @@
 
 ## Card values:
 
-Suits are not usable in this game. Number 2 is the lowest card one can have and the ace is the highest one. If there's a draw, the first card that was put into the table wins.
+Suits are not usable in this game. Number 2 is the lowest card one can have and the ace is the highest one. If there's a draw, the first card that was put into the table wins (draw logic not implemented).
 
 ## Rules:
 
