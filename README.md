@@ -30,5 +30,5 @@ Player 4 cannot say 0, since 1+1+2+0 = 4 and we're on round 4. He is forced to s
 
 ### Round:
 
-- Round 1 and 16: players have to guess how many rounds they'll get seeing just all the opponents cards. When all the guessing is made, all cards are put on the table at the same time.
+- Round 1 and 16: players have to guess how many rounds they'll get seeing just all the opponents cards. When all the guessing is made, all cards are put on the table following the players turns.
 - Rest of rounds: in turns, each player has to put into the table *one* of the cards of their hand. When the round is finished, the player that put the highest value card gets the round and starts the next one. This is repeated until there are no cards left in the players' hands.
