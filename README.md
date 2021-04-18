@@ -24,7 +24,7 @@ Round 4. 4 players. 3 of them have told their guessings and now it's number 4's 
 - Player 2: 1
 - Player 3: 2
 
-    Player 4 cannot say 0, since 1+1+2+0 = 4 and we're on round 4. He is forced to say 1. Keep in mind that the number of guessings can be lower or higher than the number of rounds.
+Player 4 cannot say 0, since 1+1+2+0 = 4 and we're on round 4. He is forced to say 1. Keep in mind that the number of guessings can be lower or higher than the number of rounds.
 
 - Number of guessing per player: a player cannot guess more cards than the number of the round. If we're in round 4, a player cannot say he'll get 5 rounds. Two players can say they'll get 4 rounds, though.
 
