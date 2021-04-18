@@ -1,40 +1,26 @@
-let deck = require("./model/cards.json");
-let players = require("./model/players.json");
+import Deck from "./deck.js";
+import Players from "./player.js";
 
-class Card {
-  constructor(suit, value) {
-    this.suit = suit;
-    this.value = value;
-  }
-  get value() {
-    return this.value();
-  }
+function startGame(round) {
+  if (round > 16) return console.error("Game is over.");
+  const deck = new Deck();
+  const players = new Players();
+  players.deal(deck.shuffle(), round);
+  players.makeGuess(1, round);
+  // put hands into table (making them visible)
+  let firstCard = players.putCardIntoTable(0, 1);
+  let secondCard = players.putCardIntoTable(1, 0);
+  let tableCards = [firstCard, secondCard];
+  players.currentHand();
+  players.compareHands(tableCards);
+
+  players.givePoints();
+  players.showPlayers();
+  //nextRound(round)
 }
 
-class Player {
-  constructor(name, surname, hand, points, turn) {
-    this.name = name;
-    this.surname = surname;
-    this.hand = hand;
-    this.points = points;
-    this.turn = turn;
-  }
-}
+startGame(2);
 
-let shuffle = (wholeDeck) => {
-  for (let i = wholeDeck.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [wholeDeck[i], wholeDeck[j]] = [wholeDeck[j], wholeDeck[i]];
-  }
-  return wholeDeck;
-};
-
-console.log(shuffle(deck));
-
-let handGenerator = (wholeDeck, players, round) => {
-    for(let i = 0; i <= round; i++) {
-        for(let player in players){
-            player.hand.push(wholeDeck[i]);
-        }
-    }
+function nextRound(round) {
+  startGame(round + 1);
 }

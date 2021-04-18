@@ -1,16 +1,16 @@
 [
-    {
-      "name": "Rodrigo",
-      "surname": "Arcos",
-      "hand": {},
-      "points": 0,
-      "turn": 1
-    },
-    {
-        "name": "Mouad",
-        "surname": "Idracab",
-        "hand": {},
-        "points": 0,
-        "turn": 2
-      }
+  {
+    "name": "Rodrigo",
+    "surname": "Arcos",
+    "hand": [],
+    "points": 0,
+    "turn": 1
+  },
+  {
+    "name": "Mouad",
+    "surname": "Idracab",
+    "hand": [],
+    "points": 0,
+    "turn": 2
+  }
 ]
