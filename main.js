@@ -11,11 +11,13 @@ function startGame(round) {
   let firstCard = players.putCardIntoTable(0, 1);
   let secondCard = players.putCardIntoTable(1, 0);
   let tableCards = [firstCard, secondCard];
+  // we have to remove the cards from the hand
   players.currentHand();
   players.compareHands(tableCards);
 
   players.givePoints();
   players.showPlayers();
+  players.changeTurns();
   //nextRound(round)
 }
 
