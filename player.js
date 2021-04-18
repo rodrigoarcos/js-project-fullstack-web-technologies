@@ -106,6 +106,11 @@ export default class Players {
         if(this.players[i].id == biggestHand.owner){
             this.players[i].roundsWon += 1;
         }
+        for(let j in tableCards){
+            if(this.players[i].id == tableCards[j].owner){
+                removeItemFromArray(this.players[i].hand, tableCards[j]);
+            }
+        }
     }
   }
 
@@ -120,6 +125,14 @@ export default class Players {
               this.players[i].points -= value * 10;  
           }
       }
+  }
+
+  changeTurns(){
+      let firstTurn = this.players[0].turn;
+      for(let i = 0; i < this.numberOfPlayers - 1; i++) {
+          this.players[i].turn = this.players[i+1].turn;
+      }
+      this.players[this.numberOfPlayers - 1].turn = firstTurn;
   }
 }
 
@@ -169,4 +182,12 @@ function setPlayers() {
       pl.roundsWon
     );
   });
+}
+
+function removeItemFromArray(array, value) {
+    const index = array.indexOf(value);
+    if(index > -1) {
+        array.splice(index, 1);
+    }
+    return array;
 }
