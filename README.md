@@ -12,11 +12,11 @@ Arab Poker is played with the classic poker deck. It is divided into 16 rounds a
 
 The turn is moving clockwise every round. The first player of the round recieves an amount of cards. Depending on which round we're on the player can or cannot see this card. In rounds 1 and 16 the player cannot see his own card, but everyone else can.
 
-Once a player has received his cards he has to make a guess on how many rounds he will win. Don't worry, I'll explain how a round goes later on. Then, if this player has guessed right the number of rounds he has won, this player will have 10 points per each round he has won. If not, he will have -10 point for each round he has not won (p. ex. if a player says he will win 0 rounds and he wins 1, this player will get -10 points. Same goes if the player says 3 wins and gets just 1. In this case he will get -20 points.). The player with the highest punctuation at the end of round 16 wins the game.
+Once a player has received his cards he has to make a guess on how many rounds he'll win. Don't worry, I'll explain how a round goes later on. Then, if this player has guessed right the number of rounds he has won, this player will have 10 points per each round he has won. If not, he'll have -10 point for each round he has not won (p. ex. if a player says he will win 0 rounds and he wins 1, this player will get -10 points. Same goes if the player says 3 wins and gets just 1. In this case he will get -20 points.). The player with the highest punctuation at the end of round 16 wins the game.
 
 ### Guessing:
 
-When a player gets his hand he has to guess how many cards he will get. This seems easy if you are not the last person. The fun of the game is that the sum of the guessings of every player cannot be equal to the number of the round, but this condition only applies to the last player in the round. For example, imagine the following scenario:
+When a player gets his hand he has to guess how many cards he'll get. This seems easy if you are not the last person. The fun of the game is that the sum of the guessings of every player cannot be equal to the number of the round, but this condition only applies to the last player in the round. For example, imagine the following scenario:
 
 Round 4. 4 players. 3 of them have told their guessings and now it's number 4's turn:
 
