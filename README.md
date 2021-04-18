@@ -10,7 +10,7 @@ Suits are not usable in this game. Number 2 is the lowest card one can have and 
 
 Arab Poker is played with the classic poker deck. It is divided into 16 rounds and it requires a minimum of two players. For each round we deal the number of cards of that same round (round 1: 1 card each, round 8: 8 cards each) up to round 8. In round 9 we deal 8 cards per player and we decrease one card for each round until round 16 (1 card).
 
-The turn is moving clockwise every round. The first player of the round recieves an amount of cards. Depending on which round we're on the player can or cannot see this card. In rounds 1 and 16 the player cannot see his own card, but everyone else can.
+The turns are moving clockwise every round. The first player of the round recieves an amount of cards. Depending on which round we're on the player can or cannot see this card. In rounds 1 and 16 the player cannot see his own card, but everyone else can.
 
 Once a player has received his cards he has to make a guess on how many rounds he'll win. Don't worry, I'll explain how a round goes later on. Then, if this player has guessed right the number of rounds he has won, this player will have 10 points per each round he has won. If not, he'll have -10 point for each round he has not won (p. ex. if a player says he will win 0 rounds and he wins 1, this player will get -10 points. Same goes if the player says 3 wins and gets just 1. In this case he will get -20 points.). The player with the highest punctuation at the end of round 16 wins the game.
 
